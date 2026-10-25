@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>{{ post.title }}</title>
+    <link rel="stylesheet" href="{% static 'css/article.css' %}">
+</head>
+<body class="article">
+    <div class="header">
+        <img src="{% static 'img/logo.png' %}" />
+        <div class="header-links">
+            <a class="all-posts" href="{% url 'archive' %}">Все ролики</a>
+        </div>
+    </div>
+    <div class="content">
+        <h1>{{ post.title }}</h1>
+        <div class="article-info">
+            <div class="article-author">Заказчик: {{ post.customer }}</div>
+            <div class="article-created-date">{{ post.air_date }}</div>
+        </div>
+        <p class="article-details">Передача: {{ post.program }} (рейтинг {{ post.rating }})</p>
+        <p class="article-details">Длительность ролика: {{ post.duration }} сек</p>
+        <p class="article-details">Стоимость минуты рекламы: {{ post.minute_price }} руб.</p>
+        <p class="article-details">Стоимость рекламы: {{ post.get_cost }} руб.</p>
+        <p class="article-details">Агент: {{ post.agent }} ({{ post.agent_percent }} %)</p>
+        <p class="article-details">Зарплата агента: {{ post.get_agent_salary }} руб.</p>
+        <p class="article-text">{{ post.text }}</p>
+    </div>
+</body>
+</html>

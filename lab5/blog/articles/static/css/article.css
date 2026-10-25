@@ -1,0 +1,80 @@
+/* общие стили страниц */
+body {
+    background: #1abc9c;
+    font-family: Tahoma, Arial, sans-serif;
+    color: #ffffff;
+}
+
+.header {
+    position: relative;
+    width: 960px;
+    margin: 20px auto;
+    min-height: 62px;
+}
+
+/* логотип по центру (страница архива) */
+.header img {
+    display: block;
+    width: 318px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.archive {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.post-title a {
+    color: #ffffff;
+}
+
+.article-author {
+    width: 50%;
+    float: left;
+    font-weight: bold;
+}
+
+.article-created-date {
+    text-align: right;
+    font-style: italic;
+}
+
+.article-details {
+    clear: both;
+    margin: 12px 0 0 0;
+}
+
+.article-text {
+    line-height: 1.4;
+}
+
+/* ссылки в правом верхнем углу шапки */
+.header-links {
+    position: absolute;
+    top: 20px;
+    right: 0;
+}
+
+.all-posts {
+    color: #ffffff;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+/* стили страницы одной записи */
+.article .header img {
+    margin-left: 0;
+}
+
+.article .content {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.article h1 {
+    font-size: 28px;
+    margin-bottom: 14px;
+}
